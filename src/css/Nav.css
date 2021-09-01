@@ -1,0 +1,53 @@
+    .tabsDiv {
+        justify-content: space-around;
+        width: 50%;
+    }
+    
+    .Navbar {
+        background-color: transparent!important;
+        z-index: 100!important;
+        box-shadow: none!important;
+    }
+    
+    .tabs {
+        --animation-time: 200ms;
+        position: relative;
+        overflow: hidden;
+        color: #FFFFFF!important;
+        border: none!important;
+        background-color: transparent!important;
+        padding: 0.3em 2em!important;
+    }
+    
+    .tabs::after {
+        content: '';
+        display: block;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: var(--underline-size, 2px);
+        position: absolute;
+        background-color: var(--underline-color, currentColor);
+        transition: transform ease var(--animation-time, 200ms), opacity ease 200ms 200ms;
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    
+    .tabs:hover~.tabs::after {
+        transform: translateX(-100%);
+    }
+    
+    .Navbar:not(:hover) .tabs:not(.is-active)::after {
+        transform: translateY(100%);
+    }
+    
+    .tabsDiv:hover .tabs:hover::after,
+    .Navbar:hover .tabsDiv:hover .tabs:hover::after {
+        transition-delay: 0ms, 0ms;
+    }
+    
+    .tabs.is-active::after,
+    .tabs:hover::after {
+        transform: translateX(0%);
+        opacity: 1;
+    }

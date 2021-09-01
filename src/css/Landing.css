@@ -1,0 +1,52 @@
+html,
+body {
+    height: 100%!important;
+    justify-content: center;
+}
+
+#landingDiv {
+    height: 100%!important;
+    width: 100%!important;
+    z-index: 1;
+}
+
+#landingText {
+    color: #FFFFFF!important;
+    font-size: 4em;
+}
+
+#landingImg {
+    background-image: url("../assets/landing.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+    size: 100% auto;
+    height: 100%!important;
+    width: 100%!important;
+    opacity: 0.8;
+}
+
+#landingTextDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#subTextDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 60%;
+    position: absolute;
+}
+
+#subTextDiv>h5 {
+    color: #FFFFFF;
+}
