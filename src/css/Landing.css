@@ -12,7 +12,8 @@ body {
 
 #landingText {
     color: #FFFFFF!important;
-    font-size: 4em;
+    font-size: 5vw;
+    --ti-cursor-font-size: 1em!important;
 }
 
 #landingImg {
@@ -31,9 +32,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin-top: 20%;
     position: absolute;
-    top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
@@ -43,10 +43,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 60%;
+    margin-top: 25%;
     position: absolute;
+    padding: 0em 3em;
 }
 
 #subTextDiv>h5 {
     color: #FFFFFF;
+    font-size: 1.3vw;
+    font-weight: lighter;
 }

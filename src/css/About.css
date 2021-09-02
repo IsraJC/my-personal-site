@@ -1,0 +1,21 @@
+* {
+    color: white!important;
+    font-family: Roboto!important;
+}
+
+#title {
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+#text {
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+#aboutDiv {
+    height: 50vh;
+}

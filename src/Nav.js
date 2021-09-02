@@ -15,7 +15,7 @@ export default function Nav() {
     return (
       <AppBar position="static" className="Navbar">
         <Toolbar>
-          <Typography variant="h6" style={{flex:1}}>
+          <Typography variant="h6" id="name" style={{flex:1}}>
             Isra Jawaid
           </Typography>
           <div clasName="tabsDiv">
